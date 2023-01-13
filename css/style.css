@@ -1,0 +1,351 @@
+@charset "UTF-8";
+/* NAV */
+#header{
+    width: 1200px;
+    height: 100px;
+    position: relative;
+
+    z-index: 10;
+}
+    /* LOGO */
+    .logo{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 30px;
+        width: 200px;
+        height: 40px;
+    }
+    /* NAV */
+    .nav{
+        width: 600px;
+        height: 40px;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+    .nav>ul{
+        width: 100%;
+        height: 100%;
+        background: #ff7f00;
+        line-height: 40px;
+    }
+    .nav>ul>li{
+        width: 150px;
+        float: left;
+        text-align: center;
+        
+    }
+    .nav>ul>li>a>h3{
+        color: #fff;
+    }
+    .nav>ul>li:hover>a>h3{
+        background: #22449c;
+    }
+    /* SUBNAV */
+    .subnav{
+        background: #22459c8f;
+
+        display: none;
+    }
+    .subnav li a{
+        color: #fff;
+    }
+    .subnav li:hover{
+        background: #152b63;
+    }
+
+/* SLIDER */
+#slider{
+    width: 1200px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+
+    z-index: 1;
+}
+.slides{
+    width: 100%;
+    height: 300%;
+    position: absolute;
+}
+.slide{
+    width: 1200px;
+    height: 300px;
+    position: relative;
+}
+.slide a h3{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+}
+
+/* CONTENTS */
+#contents{
+    width: 1200px;
+    height: 200px;
+}
+/* TABS */
+.tabs{
+    position: relative;
+}
+/* CONT */
+.cont{
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    float: left;
+}
+/* TITLE */
+.title{
+    padding-bottom: 5px;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+/* ACTIVE */
+.active>div>a>h3{
+    background: #ff7f00;
+}
+.active>div>a>h3{
+    color: #fff;
+}
+/* INSIDE CONTENT */
+.inside{
+    width: 100%;
+    height: 150px;
+    border-top: 2px solid #ff7f00;
+    overflow: hidden;
+}
+    /* NOTICE CONTENT */
+    .notice ul li{
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+    }
+    .notice ul li a p{
+        line-height: 37px;
+        font-size: 12px;
+        padding: 0 5px;
+        color: #676767;
+    }
+    .notice ul li a p span{
+        float: right;
+    }
+    .notice ul li:hover a p{
+        background: #ff7f00;
+        color: #fff;
+    }
+    /* GALLERY */
+    .gallery{
+        position: absolute;
+        top: 0;
+        left: 110px;
+        width: 100px;
+        height: 40px;
+    }
+    .gallery ul{
+        display: none;
+        position: absolute;
+        left: -100px;
+        width: 380px;
+        height: 150px;
+    }
+    .gallery ul li{
+        width: 116px;
+        height: 150px;
+        float: left;
+        overflow: hidden;
+        margin: 0 5px;
+    }
+    .gallery ul li a img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.8;
+        transition: 0.2s;
+    }
+    .gallery ul li:hover a img{
+        opacity: 1;
+        transform: scale(1.2);
+    }
+/* BANNER */
+.banner>div>a>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.2s;
+}
+.banner>div:hover>a>img{
+    opacity: 1;
+    transform: scale(1.2);
+}
+.banner>div.inside{
+    position: relative;
+}
+.banner>div.inside>a>h3{
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+/* SHORTCUT */
+.shortcut div.inside{
+    position: relative;
+}
+.shortcut div.inside ul{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.7);
+    /* height: 90px; */
+    /* padding: 5px; */
+}
+.shortcut div.inside ul li{
+    border-bottom: 1px solid #ccc;
+    padding: 2.5px;
+}
+.shortcut div.inside ul li h4{
+    font-size: 14px;
+}
+.shortcut div.inside ul li:hover{
+    background: rgba(255, 255, 255, 0.8);
+}
+.shortcut div.inside ul li h4 span{
+    line-height: 16px;
+    font-weight: lighter;
+    font-size: 10px;
+}
+.shortcut div.inside img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.2s;
+    opacity: 0.8;
+}
+.shortcut div.inside:hover img{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* FOOTER */
+#footer{
+    width: 1200px;
+    height: 100px;
+    background: #152b63;
+}
+    /* LOGO */
+    .logo2{
+        float: left;
+        width: 220px;
+        height: 100px;
+    }
+    .logo2 img{
+        margin-top: 30px;
+        float: right;
+    }
+    /* COPYRIGHT */
+    .copyright{
+        width: 780px;
+        height: 100px;
+        text-align: center;
+        float: left;
+        padding: 10px;
+    }
+    .copyright address{
+        color: #ccc;
+    }
+    .copyright p{
+        color: #ccc;
+        font-weight: lighter;
+        margin-top: 10px;
+    }
+    /* SNS */
+    .sns{
+        width: 200px;
+        height: 100px;
+        position: relative;
+        float: left;
+    }
+    .sns ul{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        width: 150px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .sns ul li{
+        position: relative;
+        width: 40px;
+        height: 40px;
+    }
+    .sns ul li a img{
+        position: absolute;
+    }
+    .sns ul li a:first-child{
+        display: none;
+    }
+    .sns ul li a:last-child img{
+        filter: invert(1);
+    }
+
+/* POPUP */
+#popup{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+
+    z-index: 999;
+}
+.popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #152b63;
+    border: 2px solid #ff7f00;
+    padding: 20px;
+    width: 500px;
+    height: 200px;
+    border-radius: 20px;
+}
+.popup h3,p{
+    color: #fff;
+}
+.popup p{
+    margin-top: 10px;
+}
+.popup h3{
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ff7f00;
+}
+.btn{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: #ff80003d;
+    border: 3px solid #ff7f00;
+    color: #ff7f00;
+    font-weight: 900;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+.btn:hover{
+    background: #ff7f00;
+    color: #152b63;
+}
